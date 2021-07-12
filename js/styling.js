@@ -5,7 +5,7 @@
 //Styling the title
 const title = document.querySelector(".title");
 title.style.color = "#E2D8D8";
-title.textContent = "Movie hunter"
+title.textContent = "Film hunter"
 
 //Styling the start page. Add a radial gradient.
 const overlay = document.querySelector("#overlay");
@@ -24,8 +24,8 @@ body.style.backgroundColor = "#332E33";
 
 //Styling the header
 const header = document.querySelector(".header")
-header.style.color = "#E7E7E7";
-header.textContent = "Guess wrong and you have to watch the movie...";
+header.style.color = "#E9C9C9";
+header.textContent = "Guess wrong and you have to watch the film...";
 header.style.fontFamily = "Courier New";
 header.style.marginRight = "20px";
 header.style.marginLeft = "20px";
@@ -36,7 +36,7 @@ if (window.matchMedia("(max-width: 700px)").matches) {
     title.style.fontSize = "300%";
     
     startMessage.style.fontSize = "150%";
-    startMessage.textContent = "Guess the right movie"
+    startMessage.textContent = "Guess the right film"
 
     header.style.fontSize = "180%";
 
@@ -50,7 +50,7 @@ else {
     title.style.letterSpacing = "15px";
 
     startMessage.style.fontSize = "200%";
-    startMessage.textContent = "~ Guess the right movie ~"
+    startMessage.textContent = "~ Guess the right film ~"
 
     header.style.fontSize = "250%";
     header.style.marginTop = "60px";
@@ -93,7 +93,7 @@ function styleInterface(input, spoiler) {
 
     if (input === "lose") {
         title.style.color= "#6A80BE";
-        title.textContent = "The movie you have to watch:";
+        title.textContent = "The film you have to watch:";
 
         overlay.style.backgroundColor = "#00112B";
 

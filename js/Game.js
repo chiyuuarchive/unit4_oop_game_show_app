@@ -18,8 +18,8 @@ class Game {
             "The Lighthouse", 
             "Midsommar", 
             "Hereditary", 
-            "Beau",
-            "Munchausen"];
+            "The Host",
+            "Eli"];
         let phrases = [];
         newPhrases.forEach(newPhrase => phrases.push(new Phrase(newPhrase)));
         return phrases;
