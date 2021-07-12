@@ -77,12 +77,12 @@ class Game {
                 return false;
             }
         }
-        return this.gameOver(true);
+        return true;
     }
 
     /**
     * Displays "game over" message.
-    * @param {boolean} gameWon - Input if game is won. 
+    * @param {boolean} gameWon - Input true if game is won. 
     */
     gameOver(gameWon) {
         const message = document.querySelector("#game-over-message");
@@ -133,7 +133,9 @@ class Game {
         if (this.activePhrase.checkLetter(letter)) {
             this.activePhrase.showMatchedLetter(letter);
             button.classList.add("chosen");
-            this.checkForWin();   
+            if (this.checkForWin()) {
+                this.gameOver(true);
+            };   
         }
         else {
             this.removeLife();

@@ -23,15 +23,17 @@ for (let i = 0; i < keyButtons.length; i++) {
 
 //Listening to key down events and when certain conditions are fulfilled, call on the object methods.
 document.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        if (button.disabled == false) {
+    if (e.key === "Enter" &&
+        button.disabled == false && 
+        overlay.style.display !== "none") 
+        {
             game = new Game();
             game.startGame();
         }    
-    }
+    
     if (overlay.style.display == "none") {
         for(let i = 0; i < keyButtons.length; i++) {
-            if (keyButtons[i].textContent === e.key) {
+            if (keyButtons[i].textContent === e.key && keyButtons[i].disabled == false) {
                 game.handleInteraction(keyButtons[i]);
             }
         }

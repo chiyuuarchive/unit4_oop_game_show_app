@@ -68,8 +68,7 @@ function styleInterface(input, spoiler) {
     const title = document.querySelector(".title");
     const message = document.querySelector("#game-over-message");
     const button = document.querySelector("#btn__reset");
-    
-    title.style.fontFamily = "Courier";
+
     title.style.fontSize = "35px";    
     
     if (input === "win") {
@@ -78,9 +77,9 @@ function styleInterface(input, spoiler) {
 
         title.style.fontSize = "50px"    
         
-        overlay.style.backgroundColor = "#26903B";
+        overlay.style.backgroundColor = "#3F4A40";
 
-        message.style.color = "#6F4F4F4";
+        message.style.color = "#C5C5C5";
         message.style.letterSpacing = "5px";
         message.textContent = "Still hungry for more?"
 
@@ -104,9 +103,9 @@ function styleInterface(input, spoiler) {
 
         message.style.fontSize = "45px";
         message.style.letterSpacing = "10px";
-        message.style.marginTop = "80px";
+        message.style.marginTop = "50px";
 
-        button.style.display = "none";
-        button.disabled = true; 
+
+        button.textContent = "Retry again";
     }
 }
