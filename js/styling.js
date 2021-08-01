@@ -106,6 +106,6 @@ function styleInterface(input, spoiler) {
         message.style.marginTop = "50px";
 
 
-        button.textContent = "Retry again";
+        button.textContent = "Try again!";
     }
 }
